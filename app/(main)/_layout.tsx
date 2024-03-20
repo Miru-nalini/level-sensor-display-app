@@ -19,11 +19,11 @@ const _layout = () => {
             
         <DrawerContentScrollView{...props}
         scrollEnabled
-        contentContainerStyle={{backgroundColor:'#0023a2'}}
+        contentContainerStyle={{backgroundColor:'#002c8a'}}
         >
         <View style={{padding:20,paddingVertical:40}}>
-          <Image source={require('../../assets/images/icon.png')}
-          style={{width:120,height:120,alignSelf:'center',borderRadius:60}}/>
+          <Image width={128} height={128} resizeMode='contain' source={require('../../assets/images/user.png')} 
+          style={{alignSelf:'center',borderRadius:60}}/>
           <Text style={{
             alignSelf:'center',
             fontWeight:'500',
@@ -43,10 +43,7 @@ const _layout = () => {
         <TouchableOpacity style={{
           padding:20,
           paddingBottom:20+bottom,
-          borderTopColor:'#0023a2',
-          borderWidth:1,
-          borderTopRightRadius:15,
-          borderTopLeftRadius:15,
+          backgroundColor:'#002c8a',
           alignItems:'center',
           justifyContent:'center'
         }}
@@ -55,7 +52,7 @@ const _layout = () => {
           router.replace('/')}
         }
         >
-          <Text style={{fontSize:16}}>Logout</Text>
+          <Text style={{fontSize:16,color:'#ffffff'}}>Logout</Text>
         </TouchableOpacity>
         </View>
     )
@@ -65,7 +62,7 @@ const _layout = () => {
     <Drawer drawerContent={CustomDrawerContent}
     screenOptions={{headerShown:false,
      drawerItemStyle:{borderRadius:12},
-     drawerActiveBackgroundColor:'#0023a2',
+     drawerActiveBackgroundColor:'#002c8a',
      drawerActiveTintColor:'#ffffff',
      drawerLabelStyle:{marginLeft:-20},
      }}>
@@ -77,12 +74,7 @@ const _layout = () => {
       options={{title:'add',drawerIcon:(
         {size,color})=>(<Ionicons name='add-outline' size={size} color={color}/>)
       }} />
-      <Drawer.Screen name='settings'
-      options={{title:'settings',drawerIcon:(
-        {size,color})=>(<Ionicons name='settings-outline' size={size} color={color}/>),
-        drawerItemStyle:{
-        }
-      }} />
+      
     </Drawer>
     </GestureHandlerRootView>
 

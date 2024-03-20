@@ -30,7 +30,7 @@ const register = () => {
   };
   return (
       <LinearGradient
-      colors={['#0023a2','#5179ff','#85c4ff']}
+      colors={['#1f78fe','#85c4ff','#c7e4ff']}
       style={styles.container}
       >
       <KeyboardAvoidingView style={styles.inputContainer}>
@@ -93,6 +93,7 @@ const styles = StyleSheet.create({
     borderColor:'#000',
     borderWidth:1,
     padding:16,
+    color:'#000000'
   },
   registerLink:{
     bottom:50
@@ -106,9 +107,9 @@ const styles = StyleSheet.create({
     justifyContent:'center',
     gap:8,
     borderRadius:16,
-    width:'50%',
     backgroundColor:'#000',
     borderWidth:1,
-    padding:16
+    padding:16,
+    paddingHorizontal:32
   }
 })

@@ -59,7 +59,7 @@ const index = () => {
     }
   return (
     <LinearGradient
-      colors={['#0023a2','#5179ff','#85c4ff']}
+    colors={['#5179ff','#85c4ff','#c7e4ff']}
       style={styles.container}
       >
       <View style={styles.header}>
@@ -107,7 +107,7 @@ const styles = StyleSheet.create({
   },
   vmView:{
     width:'95%',
-    backgroundColor:'#00122c',
+    backgroundColor:'#002c8a',
     borderRadius:16,
     elevation:4,
     paddingHorizontal:24,

@@ -32,7 +32,7 @@ const login = () => {
 
   return (
     <LinearGradient
-      colors={['#0023a2','#5179ff','#85c4ff']}
+    colors={['#1f78fe','#85c4ff','#c7e4ff']}
       style={styles.container}
       >
       <KeyboardAvoidingView style={styles.inputContainer}>
@@ -41,11 +41,13 @@ const login = () => {
       value={email}
       onChangeText={(text)=>setEmail(text)}
       keyboardType='email-address'
+      cursorColor={'#000000'}
       style={styles.input}/>
       <TextInput placeholder='Password'
       value={password}
       onChangeText={(text)=>setPassword(text)}
       secureTextEntry
+      cursorColor={'#000000'}
       style={styles.input}/>
       <TouchableOpacity onPress={handleLogin} style={styles.button}>
         <Text style={[styles.text,{color:'#ffffff'}]}>login</Text>
@@ -88,6 +90,7 @@ const styles = StyleSheet.create({
     borderColor:'#000',
     borderWidth:1,
     padding:16,
+    color:'#000000'
   },
   registerLink:{
     bottom:50
@@ -101,9 +104,9 @@ const styles = StyleSheet.create({
     justifyContent:'center',
     gap:8,
     borderRadius:16,
-    width:'50%',
     backgroundColor:'#000',
     borderWidth:1,
-    padding:16
+    padding:16,
+    paddingHorizontal:32
   }
 })

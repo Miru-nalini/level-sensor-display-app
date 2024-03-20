@@ -39,7 +39,7 @@ const vmDetails = () => {
     return (
       <Link href={{
         pathname:'/(main)/(vm)/pdtDetails',
-        params:{'name':item.name,'vm':vmName,'vmLocation':vmLocation, 'currentVolume':item.currentVolume,'totalVolume':item.totalVolume,'id':item.key,'vmId':vmId}
+        params:{'name':item.name,'vmName':vmName,'vmLocation':vmLocation, 'currentVolume':item.currentVolume,'totalVolume':item.totalVolume,'id':item.key,'vmId':vmId}
       }} asChild>
     <TouchableOpacity style={styles.pdtView}>
       <View style={styles.pdttop}>
@@ -67,16 +67,16 @@ const vmDetails = () => {
     console.log("loading...");
     return (
       <LinearGradient
-      colors={['#0023a2','#5179ff','#85c4ff']}
+      colors={['#5179ff','#85c4ff','#c7e4ff']}
       style={styles.loading}
       >
-      <ActivityIndicator size={56} color={'#000000'}/>
+      <ActivityIndicator size={56} color={'#002c8a'}/>
     </LinearGradient>)
    }
    
   return (
         <LinearGradient
-    colors={['#0023a2','#5179ff','#85c4ff']}
+        colors={['#5179ff','#85c4ff','#c7e4ff']}
     style={{flex:1,alignItems:'center',paddingTop:50}}>
       <View style={styles.header}>
         <Link href={'/(main)/(vm)/'} asChild>

@@ -97,9 +97,9 @@ function RootLayoutNav() {
   return (
     <GestureHandlerRootView style={{flex:1}}>
       <Stack >
-        <Stack.Screen name="index" options={{ headerShown: false }} />
-        <Stack.Screen name="login" options={{ headerShown: false }} />
-        <Stack.Screen name="(main)" options={{ headerShown: false }}/>
+        <Stack.Screen name="index" options={{ headerShown: false , presentation:'modal', animation:'slide_from_right'}} />
+        <Stack.Screen name="login" options={{ headerShown: false , presentation:'modal', animation:'slide_from_right'}} />
+        <Stack.Screen name="(main)" options={{ headerShown: false , animation:'slide_from_bottom'}}/>
       </Stack>
     </GestureHandlerRootView>
   );

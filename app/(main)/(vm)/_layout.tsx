@@ -10,7 +10,8 @@ const _layout = () => {
     <SafeAreaView style={{flex:1}}>
       <Stack screenOptions={{headerShown:false}}>
         <Stack.Screen name="index"  />
-        <Stack.Screen name="[vm]" options={{presentation:'modal'}} />
+        <Stack.Screen name="[vm]" options={{presentation:'modal', animation:'slide_from_right'}} />
+        <Stack.Screen name="pdtDetails" options={{presentation:'modal', animation:'slide_from_right'}}/>
       </Stack>
     </SafeAreaView>
   )
